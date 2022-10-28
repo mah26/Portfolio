@@ -2,13 +2,17 @@
 :root {
 	/* Colors */
 	--c-black: #05091e;
-	--c-blue: #46b4ff;
-	--c-gray: #90aab7;
+	--c-blue: #0da03e;
+	--c-gray: #CB4335 ;
 	--c-green: #9ef2cb;
 	--c-pink: #ffb8d9;
 	--c-orange: #ffb7a3;
 	--c-yellow: #ffdace;
 	--c-white: #fff;
+	--c-1: #adbadf ;
+	--c-2: #137b83   ;
+ 
+
 
 	/* Fonts */
 	--f-u18: 11.390625em;
@@ -52,12 +56,45 @@
 	--t-bg: var(--c-white);
 	--t-subdue: var(--c-gray);
 	--t-active: var(--c-blue);
+
+	
 }
 
+@font-face {
+	font-family: 'LaObrige';
+	src: url("/fonts/Aretha Bridge.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roashe';
+	src: url("/fonts/Roashe.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Aretha';
+	src: url("/fonts/Aretha Bridge.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Clean';
+	src: url("/fonts/CleanFragilePersonalUse-VGDYw.otf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 body {
 	margin: 0;
-	color: var(--t-fg);
-	font-family: 'Inter', 'system-ui', sans-serif;
+	color: var(--c-2);
+	font-family: var(--f-d18);
+	background-color: var(--c-1);
 }
 
 * {
@@ -73,9 +110,6 @@ a {
 	color: var(--t-active);
 }
 
-h1 {
-	font-size: var(--f-u8);
-}
 
 .button {
 	display: inline-block;
